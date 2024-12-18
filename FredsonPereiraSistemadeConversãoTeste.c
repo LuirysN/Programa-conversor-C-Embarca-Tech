@@ -14,19 +14,19 @@ int main() {
     printf("F - Centimetro (cm)\n");
     printf("G - Milimetro (mm)\n");
 
-    // Obter a unidade de entrada
+    // escolher a unidade de entrada
     printf("\nEscolha a unidade de entrada (A-G): ");
     scanf(" %c", &unidade_entrada);
 
-    // Obter a unidade de saída
+    // escolher a unidade de saída
     printf("Escolha a unidade de saida (A-G): ");
     scanf(" %c", &unidade_saida);
 
-    // Obter o valor na unidade de entrada
+    // pedir valor de entrada
     printf("Digite o valor na unidade de entrada: ");
     scanf("%lf", &valor);
 
-    // Realizar a conversão para metros
+    // conversão para metros
     if (unidade_entrada == 'A') {
         valor *= 1000.0;  // km -> m
     } else if (unidade_entrada == 'B') {
@@ -62,11 +62,11 @@ int main() {
     } else if (unidade_saida == 'G') {
         resultado = valor / 0.001;   // m -> mm
     } else {
-        printf("Unidade de saida inválida!\n");
+        printf("Unidade de saida invalida!\n");
         return 1;
     }
 
-    // Exibir o resultadoA
+    //resultado
     printf("\nO resultado e: %.2f\n", resultado);
 
     return 0;
