@@ -68,6 +68,6 @@ int main() {
 
     //resultado
     printf("\nO resultado e: %.2f\n", resultado);
-
+    system("pause");
     return 0;
 }
