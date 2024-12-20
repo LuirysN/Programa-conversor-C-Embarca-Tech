@@ -1,6 +1,7 @@
 #include <stdio.h>
 
 int main(){
+    // Definição das variáveis 
     int comprimento, milimetro;
     float kilometro;
 
