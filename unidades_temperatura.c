@@ -59,7 +59,7 @@ do {
     printf("1 - Celsius para Fahrenheit e Kelvin\n");
     printf("2 - Fahrenheit para Celsius e Kelvin\n");
     printf("3 - Kelvin para Celsius e Fahrenheit\n");
-    printf("X - Sair\n");
+    printf("0 - Sair\n");
     printf("Escolha uma opcao (1, 2, 3) ou 0 parar sair: ");
     scanf("%d", &escolha);
 
