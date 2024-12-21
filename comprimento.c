@@ -2,8 +2,8 @@
 
 int main(){
     // Definição das variáveis 
-    int comprimento, milimetro;
-    float kilometro;
+    int comprimento, milimetro; // variável do tipo inteiro
+    float kilometro; 
 
     printf("\n\t----CONVERSAO DE MEDIDAS----\n");
     printf("Digite o comprimento em metros: \n");
