@@ -2,6 +2,7 @@
 #include <ctype.h> 
 
 int main() {
+    // Definição das variáveis 
     char unidade_entrada = '\0', unidade_saida;
     double valor, resultado;
 
