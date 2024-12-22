@@ -1,9 +1,9 @@
-#include <stdio.h>
+#include <stdio.h> //Adicionado #include <stdio.h> para incluir a biblioteca de entrada e saída de dados
 
 int main(){
     // Definição das variáveis 
     int comprimento, milimetro;
-    float kilometro;
+    double kilometro;
 
     printf("\n\t----CONVERSAO DE MEDIDAS----\n");
     printf("Digite o comprimento em metros: \n");
