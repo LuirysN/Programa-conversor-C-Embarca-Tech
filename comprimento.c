@@ -1,4 +1,5 @@
 #include <stdio.h> //Adicionado #include <stdio.h> para incluir a biblioteca de entrada e saída de dados
+#include <stdlib.h>
 
 int main(){
     // Definição das variáveis 
