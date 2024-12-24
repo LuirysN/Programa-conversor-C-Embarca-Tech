@@ -101,3 +101,29 @@ int main() {
     }
     return 0;
 }
+
+// Função para obter o fator de conversão
+double obterFator(char unidade) {
+    int index = unidade - 'A';
+    return fatores[index];
+}
+
+// Função para realizar a conversão
+double converter(double valor, char entrada, char saida) {
+    return valor * (obterFator(entrada) / obterFator(saida));
+}
+
+// Função para exibir o histórico de conversões
+void exibirHistorico(Conversao historico[], int contador) {
+    printf("\nHistorico de conversoes:\n");
+    for (int i = 0; i < contador; i++) {
+        printf("%.2f %c -> %.2f %c\n",
+               historico[i].valor, historico[i].entrada,
+               historico[i].resultado, historico[i].saida);
+    }
+}
+
+// Função para validar uma unidade
+bool validarUnidade(char unidade) {
+    return unidade >= 'A' && unidade <= 'G';
+}
