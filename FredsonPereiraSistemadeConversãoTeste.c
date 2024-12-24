@@ -15,6 +15,12 @@ typedef struct {
 const double fatores[] = {1000.0, 100.0, 10.0, 1.0, 0.1, 0.01, 0.001};
 const char unidades[] = {'A', 'B', 'C', 'D', 'E', 'F', 'G'};
 
+// Protótipos das funções
+double obterFator(char unidade);
+double converter(double valor, char entrada, char saida);
+void exibirHistorico(Conversao historico[], int contador);
+bool validarUnidade(char unidade);
+
 int main() {
     // Definição das variáveis 
     char unidade_entrada = '\0', unidade_saida;
