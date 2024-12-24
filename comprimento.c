@@ -77,14 +77,7 @@ int main(){
             printf("Opcao invalida. Por favor, tente novamente.\n");
     }
 
-kilometro= comprimento/1000.0;
-milimetro = comprimento*1000.0;
-centimetro = comprimento * 100.0;
-
-printf("O comprimento: %d \n Equivale a: %.2f quilometros!! \n" ,comprimento,kilometro); //adicionado %.2f para limitar a 2 casas decimais e float para kilometro
-printf("O comprimento: %d \n Equivale a: %d milimetros!! \n" ,comprimento,milimetro);
-printf("O comprimento: %d \n Equivale a: %.2f centimetros!! \n", comprimento, centimetro); //Adicionado conversão para centímetros
-
+    printf("\n");
     system("pause");
     return 0;
 }
