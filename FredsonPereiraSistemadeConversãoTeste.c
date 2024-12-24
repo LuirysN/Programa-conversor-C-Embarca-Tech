@@ -63,6 +63,11 @@ int main() {
         scanf(" %c", &unidade_saida);
         unidade_saida = toupper(unidade_saida);
 
+        if (!validarUnidade(unidade_saida)) {
+            printf("Unidade de saida invalida. Tente novamente.\n");
+            continue;
+        }
+        
         // pedir valor de entrada
         printf("Digite o valor na unidade de entrada: ");
         scanf("%lf", &valor);
