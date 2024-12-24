@@ -22,7 +22,9 @@ void exibirHistorico(Conversao historico[], int contador);
 bool validarUnidade(char unidade);
 
 int main() {
-    // Definição das variáveis 
+    // Definição das variáveis
+    Conversao historico[MAX_HISTORICO];
+    int contador = 0;
     char unidade_entrada = '\0', unidade_saida;
     double valor, resultado;
 
