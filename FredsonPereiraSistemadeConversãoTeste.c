@@ -86,6 +86,14 @@ int main() {
             historico[contador].resultado = resultado;
             contador++;
         }
+
+        // Opção de exibir histórico
+        printf("\nDeseja ver o historico de conversoes? (S/N): ");
+        char opcao;
+        scanf(" %c", &opcao);
+        if (toupper(opcao) == 'S') {
+            exibirHistorico(historico, contador);
+        }
     }
     return 0;
 }
