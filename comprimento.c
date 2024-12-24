@@ -42,6 +42,17 @@ int main(){
         return 1;
     }
 
+    // Exibe o menu de opções
+    printf("Escolha a unidade para conversao:\n");
+    printf("1 - Quilometros\n");
+    printf("2 - Hectometros\n");
+    printf("3 - Decametros\n");
+    printf("4 - Centimetros\n");
+    printf("5 - Decimetros\n");
+    printf("6 - Milimetros\n");
+    printf("Digite a opçao desejada: ");
+    scanf("%d", &opcao);
+
 kilometro= comprimento/1000.0;
 milimetro = comprimento*1000.0;
 centimetro = comprimento * 100.0;
