@@ -94,6 +94,10 @@ int main() {
         if (toupper(opcao) == 'S') {
             exibirHistorico(historico, contador);
         }
+
+        // Limpar tela para próxima iteração
+        system("pause");
+        system("cls");
     }
     return 0;
 }
