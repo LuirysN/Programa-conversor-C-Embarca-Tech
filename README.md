@@ -10,9 +10,9 @@ O objetivo principal é desenvolver habilidades práticas nessas ferramentas, co
 Códigos a serem feitos:
 
 # Conversor de Unidades
-Este programa realiza conversões de comprimento entre metros, milímetros, quilômetros e centímetros.
+Este programa realiza conversões de comprimento de metros para seus múltiplos e submúltiplos.
 
 ## Como usar
-- Compile o código com `gcc nome_do_programa.c -o nome_do_programa`
-- Execute com `./nome_do_programa`
+- Compile o código com `gcc comprimento.c -o comprimento`
+- Execute com `./comprimento`
 - Insira o comprimento em metros para ver as conversões.
