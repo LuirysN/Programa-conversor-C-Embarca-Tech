@@ -61,7 +61,7 @@ int main() {
         // escolher a unidade de saída
         printf("Escolha a unidade de saida (A-G): ");
         scanf(" %c", &unidade_saida);
-        toupper(unidade_saida);
+        unidade_saida = toupper(unidade_saida);
 
         // pedir valor de entrada
         printf("Digite o valor na unidade de entrada: ");
