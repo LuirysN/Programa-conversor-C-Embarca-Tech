@@ -48,6 +48,16 @@ int main() {
         scanf(" %c", &unidade_entrada);
         unidade_entrada = toupper(unidade_entrada); // transforma a var. em maiuscula caso o usuario digite minuscula
 
+        if (unidade_entrada == 'X') {
+            printf("Encerrando o programa. Ate logo!\n");
+            break;
+        }
+
+        if (!validarUnidade(unidade_entrada)) {
+            printf("Unidade de entrada invalida. Tente novamente.\n");
+            continue;
+        }
+        
         // escolher a unidade de saída
         printf("Escolha a unidade de saida (A-G): ");
         scanf(" %c", &unidade_saida);
