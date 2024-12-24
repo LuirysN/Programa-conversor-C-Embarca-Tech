@@ -11,6 +11,10 @@ typedef struct {
     double valor, resultado;
 } Conversao;
 
+// Vetor de fatores de conversão
+const double fatores[] = {1000.0, 100.0, 10.0, 1.0, 0.1, 0.01, 0.001};
+const char unidades[] = {'A', 'B', 'C', 'D', 'E', 'F', 'G'};
+
 int main() {
     // Definição das variáveis 
     char unidade_entrada = '\0', unidade_saida;
