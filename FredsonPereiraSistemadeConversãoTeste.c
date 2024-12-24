@@ -44,9 +44,9 @@ int main() {
         printf("X - Sair\n\n");
 
         // escolher a unidade de entrada
-        printf("\nEscolha a unidade de entrada (A-G): ");
+        printf("\nEscolha a unidade de entrada (A-G ou X para sair): ");
         scanf(" %c", &unidade_entrada);
-        toupper(unidade_entrada); // transforma a var. em maiuscula caso o usuario digite minuscula
+        unidade_entrada = toupper(unidade_entrada); // transforma a var. em maiuscula caso o usuario digite minuscula
 
         // escolher a unidade de saída
         printf("Escolha a unidade de saida (A-G): ");
