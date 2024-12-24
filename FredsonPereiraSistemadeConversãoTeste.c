@@ -1,5 +1,15 @@
 #include <stdio.h>
-#include <ctype.h> 
+#include <ctype.h>
+#include <stdlib.h>
+#include <stdbool.h>
+
+#define MAX_HISTORICO 100
+
+// Estrutura para armazenar o histórico de conversões
+typedef struct {
+    char entrada, saida;
+    double valor, resultado;
+} Conversao;
 
 int main() {
     // Definição das variáveis 
