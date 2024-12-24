@@ -50,8 +50,32 @@ int main(){
     printf("4 - Centimetros\n");
     printf("5 - Decimetros\n");
     printf("6 - Milimetros\n");
-    printf("Digite a opçao desejada: ");
+    printf("Digite a opcao desejada: ");
     scanf("%d", &opcao);
+
+    // Processa a opção selecionada
+    switch (opcao) {
+        case 1:
+            printf("O comprimento: %d metros equivale a %.2f quilometros.\n", comprimento, converterParaKilometros(comprimento));
+            break;
+        case 2:
+            printf("O comprimento: %d metros equivale a %.2f hectometros.\n", comprimento, converterParaHectometros(comprimento));
+            break;
+        case 3:
+            printf("O comprimento: %d metros equivale a %.2f decametros.\n", comprimento, converterParaDecametros(comprimento));
+            break;
+        case 4:
+            printf("O comprimento: %d metros equivale a %.2f centimetros.\n", comprimento, converterParaCentimetros(comprimento));
+            break;
+        case 5:
+            printf("O comprimento: %d metros equivale a %.2f decimetros.\n", comprimento, converterParaDecimetros(comprimento));
+            break;
+        case 6:
+            printf("O comprimento: %d metros equivale a %d milimetros.\n", comprimento, converterParaMilimetros(comprimento));
+            break;
+        default:
+            printf("Opcao invalida. Por favor, tente novamente.\n");
+    }
 
 kilometro= comprimento/1000.0;
 milimetro = comprimento*1000.0;
