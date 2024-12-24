@@ -28,9 +28,11 @@ int main() {
     char unidade_entrada = '\0', unidade_saida;
     double valor, resultado;
 
-    while(unidade_entrada!='X')
-    {
-        printf("Conversor de unidades de distância\n");
+    while(1) {
+        // Interface inicial
+        printf("\n===============================\n");
+        printf("     Conversor de Distancias    \n");
+        printf("===============================\n");
         printf("Unidades disponiveis:\n");
         printf("A - Quilometro (km)\n");
         printf("B - Hectometro (hm)\n");
@@ -39,7 +41,7 @@ int main() {
         printf("E - Decimetro (dm)\n");
         printf("F - Centimetro (cm)\n");
         printf("G - Milimetro (mm)\n");
-        printf("X - Sair\n");
+        printf("X - Sair\n\n");
 
         // escolher a unidade de entrada
         printf("\nEscolha a unidade de entrada (A-G): ");
