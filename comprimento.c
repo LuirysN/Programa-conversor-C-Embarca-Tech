@@ -1,6 +1,31 @@
 #include <stdio.h> //Adicionado #include <stdio.h> para incluir a biblioteca de entrada e saída de dados
 #include <stdlib.h>
 
+// Funções para conversão de unidades
+float converterParaKilometros(int metros) {
+    return metros / 1000.0;
+}
+
+float converterParaHectometros(int metros) {
+    return metros / 100.0;
+}
+
+float converterParaDecametros(int metros) {
+    return metros / 10.0;
+}
+
+float converterParaCentimetros(int metros) {
+    return metros * 100.0;
+}
+
+float converterParaDecimetros(int metros) {
+    return metros * 10.0;
+}
+
+int converterParaMilimetros(int metros) {
+    return metros * 1000;
+}
+
 int main(){
     // Definição das variáveis 
     int comprimento, milimetro; // variável do tipo inteiro
