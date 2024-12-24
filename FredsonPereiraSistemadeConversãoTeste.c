@@ -77,6 +77,15 @@ int main() {
     
         // Exibir o resultado
         printf("\nO resultado e: %.2f\n", resultado);
+
+        // Salvar no histórico
+        if (contador < MAX_HISTORICO) {
+            historico[contador].entrada = unidade_entrada;
+            historico[contador].saida = unidade_saida;
+            historico[contador].valor = valor;
+            historico[contador].resultado = resultado;
+            contador++;
+        }
     }
     return 0;
 }
