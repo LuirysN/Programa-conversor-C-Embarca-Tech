@@ -28,12 +28,19 @@ int converterParaMilimetros(int metros) {
 
 int main(){
     // Definição das variáveis 
-    int comprimento, milimetro; // variável do tipo inteiro
-    float kilometro, centimetro; 
+    int comprimento;
+    int opcao;
 
-    printf("\n\t----CONVERSAO DE MEDIDAS----\n");
-    printf("Digite o comprimento em metros: \n");
+    printf("\n\t---- CONVERSAO DE MEDIDAS ----\n\n");
+
+    // Solicita o comprimento em metros
+    printf("Digite o comprimento em metros: ");
     scanf("%d", &comprimento);
+
+    if (comprimento < 0) {
+        printf("Por favor, insira um valor positivo.\n");
+        return 1;
+    }
 
 kilometro= comprimento/1000.0;
 milimetro = comprimento*1000.0;
