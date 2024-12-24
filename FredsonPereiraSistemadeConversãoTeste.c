@@ -75,10 +75,8 @@ int main() {
         // Realizar a conversão
         resultado = converter(valor, unidade_entrada, unidade_saida);
     
-        //resultado
+        // Exibir o resultado
         printf("\nO resultado e: %.2f\n", resultado);
-        system("pause");
-        system("cls");
     }
     return 0;
 }
