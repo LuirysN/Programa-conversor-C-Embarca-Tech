@@ -1,5 +1,5 @@
 #include <stdio.h> //Adicionado #include <stdio.h> para incluir a biblioteca de entrada e saída de dados
-#include <stdlib.h>
+#include <stdlib.h> //Adicionado #include <stdlib.h> para incluir a biblioteca de funções de propósito geral
 
 // Funções para conversão de unidades
 float converterParaKilometros(int metros) {
@@ -36,7 +36,7 @@ int main(){
     // Solicita o comprimento em metros
     printf("Digite o comprimento em metros: ");
     scanf("%d", &comprimento);
-
+    //Validação do comprimento, se menor que zero, exibe mensagem de erro e retorna 1
     if (comprimento < 0) {
         printf("Por favor, insira um valor positivo.\n");
         return 1;
@@ -51,9 +51,11 @@ int main(){
     printf("5 - Decimetros\n");
     printf("6 - Milimetros\n");
     printf("Digite a opcao desejada: ");
-    scanf("%d", &opcao);
+    scanf("%d", &opcao); //Lê a opção desejada
 
     // Processa a opção selecionada
+    //Switch case para as opções de conversão
+    //FIM tags para completar o código
     switch (opcao) {
         case 1:
             printf("O comprimento: %d metros equivale a %.2f quilometros.\n", comprimento, converterParaKilometros(comprimento));
@@ -77,7 +79,7 @@ int main(){
             printf("Opcao invalida. Por favor, tente novamente.\n");
     }
 
-    printf("\n");
-    system("pause");
-    return 0;
+    printf("\n"); //Pula uma linha para melhorar a legibilidade
+    system("pause"); //Pausa a execução do programa
+    return 0; //Retorna 0 para indicar que o programa foi executado com sucesso
 }
